@@ -24,8 +24,7 @@ fi
 
 unzip -q "$release_file" -d "$ASDF_DOWNLOAD_PATH" || exit 1
 
-# rename the tool to an unversioned name
-mv "${ASDF_DOWNLOAD_PATH}/${TOOL_NAME}_v${ASDF_INSTALL_VERSION}" "${ASDF_DOWNLOAD_PATH}/$TOOL_NAME"
+#mv "${ASDF_DOWNLOAD_PATH}/${TOOL_NAME}_v${ASDF_INSTALL_VERSION}" "${ASDF_DOWNLOAD_PATH}/$TOOL_NAME"
 
 chmod +x "${ASDF_DOWNLOAD_PATH}/$TOOL_NAME"
 
